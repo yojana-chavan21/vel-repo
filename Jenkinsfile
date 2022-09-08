@@ -2,7 +2,7 @@ pipeline {
 
 agent {
 
-lable {
+node {
 lable  "built-in"
 }
 }
@@ -10,6 +10,7 @@ lable  "built-in"
 stages{
 stage('install-apache'){
 steps{
+  sh "yum install httpd -y"
 }
 }
 
