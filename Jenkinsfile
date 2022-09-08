@@ -1,9 +1,9 @@
 pipeline {
 
-agent {
-
-node {
-lable  "built-in"
+  agent{
+    node {
+lable  "Built-in"
+      customWorkspace ('/data/pipeline')
 }
 }
 
